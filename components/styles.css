@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 15px;
+}
+
+body {
+  background: radial-gradient(#1f3756, #141539) no-repeat;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: hidden;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+header, section {
+  width: 700px;
+}
+
+header {
+  border: 3px solid #606e85;
+  border-radius: 10px;
+  margin-top: 50px;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  margin: 12px 8px;
+  display: flex;
+}
+
+header .score {
+  width: 150px;
+  height: 115px;
+  background: #fff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header .score span {
+  color: #2a46c0;
+  text-transform: uppercase;
+}
+
+header .score h1 {
+  color: #3b4363;
+  font-size: 50px;
+}
+
+
+
+
+
+section {
+  padding: 50px 100px 0 100px;
+}
+
+section .areaEvents {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  background: url('../images/bg-triangle.svg') no-repeat center;
+}
+
+section .areaEvents .borderItems {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+section .areaEvents .hoverEffect:hover {
+  transform: scale(0.95, 0.95);
+}
+
+section .areaEvents .items {
+  height: 142px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 -8px #bbbed1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .areaEvents .rock {
+  background: radial-gradient(#dc2e4e, #dd405d);
+  box-shadow: 0px 10px #7e1f3d;
+}
+
+section .areaEvents .scissor {
+  background: radial-gradient(#ec9e0e, #eca922);
+  box-shadow: 0px 10px #c66d1b;
+}
+
+section .areaEvents .paper {
+  background: radial-gradient(#4865f4, #5671f5);
+  box-shadow: 0px 10px #2945c2;
+}
+
+section .areaEvents .items img {
+  height: 70px;
+  width: 70px;
+}
+
+
+
+
+
+footer {
+  top: 94vh;
+  position: fixed;
+  text-align: right;
+  margin: 0 30px 30px 0;
+  width: 100%;
+}
+
+footer input {
+  padding: 15px 40px  12px 40px;
+  border: 2px solid #606e85;
+  border-radius: 10px;
+  color: #fff;
+  background: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: translateY(-20px);
+  transition: 0.2s;
+}
+
+footer input:hover {
+  box-shadow: 0 0 10px #465368;
+  border: 2px solid #758091;
+  transform: scale(1.05, 1.05) translateY(-20px);
+  transition: 0.2s;
+}
+
+
+
+
+
+.modalRules {
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalRules .rules {
+  height: 400px;
+  width: 415px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 8px;
+  padding: 35px;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+.modalRules .rules .headerRules {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 50px;
+  align-items: center;
+  flex-direction: row;
+}
+
+.modalRules .rules .headerRules h1{
+  color: #3b4363;
+  font-size: 24px;
+}
+
+.modalRules .rules .headerRules img {
+  cursor: pointer;
+}
+
+
+.modalPlayAgain {
+  display: none;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modalPlayAgain h1, .modalPlayAgain input {
+  text-transform: uppercase;
+} 
+
+.modalPlayAgain h1 {
+  font-size: 40px;
+}
+
+.modalPlayAgain input {
+  font-size: 12px;
+  color: #dc2e4e;
+  height: 50px;
+  width: 220px;
+  margin-top: 25px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.modalPlayAgain input:hover {
+  transform: scale(1.05, 1.05);
+}

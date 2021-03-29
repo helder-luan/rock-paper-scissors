@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./components/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Rock, Paper, Scissors</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="./images/logo.svg" alt="logo">
+    </div>
+
+    <div class="score">
+      <span>score</span>
+      <h1 class="points">00</h1><!--score dinâmico-->
+    </div>
+  </header>
+
+  <section>
+    <div class="modalRules">
+      <div class="rules">
+        <div class="headerRules">
+          <h1>Rules</h1>
+          <img id="closeModalRules" src="./images/icon-close.svg" alt="close">
+        </div>
+
+        <img src="./images/image-rules.svg" alt="rules">
+      </div>
+    </div>
+  
+    <div class="areaEvents">
+      <div id="paper" class="borderItems paper hoverEffect">
+        <div class="items">
+          <img src="./images/icon-paper.svg" alt="paper">
+        </div>
+      </div>
+
+      <div id="scissor" class="borderItems scissor hoverEffect">
+        <div class="items">
+          <img src="./images/icon-scissors.svg" alt="scissor">
+        </div>
+      </div>
+      
+      <div id="rock" class="borderItems rock hoverEffect">
+        <div class="items">
+          <img src="./images/icon-rock.svg" alt="rock">
+        </div>
+      </div>
+
+      <div class="modalPlayAgain">
+        <h1>You Lose</h1><!--resultado dinâmico-->
+        <input onclick="location.reload()" type="button" value="Play Again">
+      </div>
+    </div>
+  <!--You Picked
+  The House Picked
+  -->
+  </section>
+  
+  <footer>
+    <input id="openModalRules" type="button" value="Rules">
+  </footer>
+  <script src="./components/script.js"></script>
+</body>
+</html>
